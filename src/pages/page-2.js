@@ -1,16 +1,17 @@
 import React from "react"
+import { LanguageContext } from '../../plugins/gatsby-plugin-language-chooser'
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const IndexPage = () => {
+  const languageContext = React.useContext(LanguageContext)
 
-const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+  return (
+    <div>
+      <p>Page 2 and our language still is: <strong>{languageContext.language}</strong></p>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
+  )
+}
 
-export default SecondPage
+export default IndexPage
+

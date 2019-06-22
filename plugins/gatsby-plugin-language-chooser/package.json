@@ -1,0 +1,26 @@
+{
+  "name": "gatsby-plugin-typescript-example",
+  "version": "1.0.0",
+  "description": "Example code for setting up typescript in a gatsby plugin",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "typescript",
+    "demo",
+    "example",
+    "plugin"
+  ],
+  "author": "Greg Perlman",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "typescript": "^3.5.2"
+  }
+}
